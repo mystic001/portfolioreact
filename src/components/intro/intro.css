@@ -1,6 +1,122 @@
 .intro{
-  
-    background-color: rgb(98, 25, 192);
     scroll-snap-align: start;
- 
+    display:flex;
 }
+
+.introleft{
+    display:flex;
+    flex:1;
+    overflow:hidden;
+}
+
+.introright{
+    display:flex;
+    flex:1;
+}
+
+.imageContainer{
+    width:700px;
+    height:700px;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-color:crimson;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+
+
+.imageContainer > img{
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
+
+.introright .wrapper{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    position: relative;
+    width: 100%;
+    color: #000;
+ }
+
+ .introright .wrapper .desc{
+     width: 100%;
+ }
+ .introright .wrapper .desc h1{
+    font-size: 35px;
+    margin: 20px 0;
+ }
+
+ .introright .wrapper .desc h2{
+    font-size: 40px;
+}
+
+.introright .wrapper .desc h3{
+    font-size: 30px;
+}
+
+.introright .wrapper .desc h3 span{
+    font-size:inherit;
+    color: crimson;
+}
+ .introright .wrapper a{
+    position: absolute;
+    left: 50%;
+    bottom:0px
+ }
+
+ .introright .wrapper a img{
+    width:30px;
+    animation: arrowBlink 2s infinite;
+ }
+
+
+
+
+ @keyframes arrowBlink {
+     100%{
+
+        opacity:0;
+     }
+ }
+
+
+ .introright .wrapper .desc h3 span .ityped-cursor {
+    font-size: 2.2rem;
+    opacity: 1;
+    -webkit-animation: blink 0.3s infinite;
+    -moz-animation: blink 0.3s infinite;
+    animation: blink 0.3s infinite;
+    animation-direction: alternate;
+}
+ 
+@keyframes blink {
+
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+ 
+@-webkit-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+ 
+@-moz-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+
+

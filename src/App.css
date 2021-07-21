@@ -1,22 +1,23 @@
 .App{
  
     height:100vh;
-
-}
-
-.section{
-    width:100%;
-    position: relative;
-    background:red;
-    height: calc(100vh - 70px);
-    top: 70px;
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-    scrollbar-width: none;
   
 }
 
+ .section{
+    width:100%;
+    position: relative;
+    height: calc(100vh - 70px);
+    top: 70px;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
 
+.section::-webkit-scrollbar{
+    display:none;
+}
 
 
 .sizeOfAll{
@@ -24,6 +25,10 @@
     height: 100%;
     scroll-snap-align: start;
 }
+
+
+
+
 
 
 

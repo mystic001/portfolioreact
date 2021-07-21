@@ -31,7 +31,14 @@ li{
 }
 
 
+
 a{
     text-decoration:none;
     color: white;
+}
+
+
+a:hover{
+    font-weight:500;
+    color: black;
 }

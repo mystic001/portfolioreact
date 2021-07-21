@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <Topbar handleClick = {() => setAct(!act)} clickMode = {act}/>
-      <Menu clickMode = {act}/>
+      <Menu clickMode = {act} closeLink = {() => setAct(false)} />
       <div className="section">
         <Intro name="sizeOfAll" />
         <Portfolio name="sizeOfAll" />
