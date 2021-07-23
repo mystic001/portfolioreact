@@ -9,11 +9,67 @@
 .portfolio ul{
     display:flex;
     flex-direction:row;
-    font-size:18px;
+    height:fit-content;
+    font-size:14px;
     margin-top: 10px;
     font-weight:200;
 }
 
 .portfolio ul li{
-    margin-left:50px
+    margin-left:50px;
+    padding:10px;
+    cursor: pointer;
 }
+
+
+
+.portfolio .linkscontainer{
+   
+    width:70%;
+    display:flex;
+    flex-wrap: wrap;
+    
+    justify-content:center;
+    align-items:center;
+    padding:10px;
+}
+
+.portfolio .linkscontainer .item{
+    width:220px;
+    height: 150px;
+    
+    margin:10px 10px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    transition:all 2s ease;
+   
+}
+
+.portfolio .linkscontainer .item img{
+    width:100%;
+    object-fit:cover;
+    border-radius:5%;
+    z-index: 4;
+}
+
+.portfolio .linkscontainer .item h4{
+    position: absolute;
+    color: #fff;
+    z-index: 3;
+}
+
+.portfolio .linkscontainer .item:hover{
+    background-color:rgba(63,0,255,0.5);
+    border-radius:5%;
+    transform: translateY(-5px);
+}
+
+.portfolio .linkscontainer .item img:hover{
+opacity: 0.4;
+z-index: 2;
+
+}
+
+
+
