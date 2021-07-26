@@ -41,7 +41,7 @@ function testimonials({name}) {
             <h1>Testimonials</h1>
             <div className = "testimonialsWrapper">
                 {data.map((item,index) => <div className={
-                   item.featured ? "testimonialCards feature card" : "testimonialCards card"
+                   item.featured ? "testimonialCards card feature" : "testimonialCards card"
                 }  key={index}>
                     <div className="toptestimonial">
                         <img className="imagetest" src = "assets/right-arrow.png" alt=""/>
